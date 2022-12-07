@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
-    background-color: #EEEEEE;
+    background-color: #F5F5F5;
 }
 
 .headerwrap {
@@ -181,6 +181,100 @@ nav {
 .we-panel-description {
     max-width: 35vh;
 }
+
+
+
+
+.cert-container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+
+.cert-holder {
+    width: 45vh;
+    overflow: hidden;
+    position: relative;
+    user-select: none;
+}
+
+.cert-holder:hover > .cert-arrows {
+    opacity: 1;
+    transition: .3s;
+}
+
+.cert-arrows {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    opacity: 0;
+    transition: .3s;
+}
+
+.cert-arrows svg {
+    width: 3vh;
+    margin: 15px;
+}
+.cert-arrows svg:hover {
+    cursor: pointer;
+}
+
+.cert-block {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    transition: 0.3s;
+}
+
+.cert-block img {
+    width: 45vh;
+}
+
+.cert-description {
+    width: 65vh;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.cert-description .text {
+    width: 100%;
+    font-size: 2.5vh;
+    margin-left: 5px;
+}
+
+.cert-description .button {
+    margin: 25px 0 25px 5px;
+}
+
+.cert-description .button a {
+    font-size: 2vh;
+    padding: 5px;
+    text-decoration: none;
+    color: #004B80;
+    border: 3px solid #004B80;
+    transition: .3s;
+}
+
+.cert-description .button a:hover {
+    background-color: #004B80;
+    color: white;
+}
+
+
+
+
 
 .goods-container {
     width: fit-content;
